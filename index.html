@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>GUI Github</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+      <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+
+  </head>
+  <body>
+
+    <section class="hero is-bold has-text-centered">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-1"> Search GitHub User</h1>
+        </div>
+    </section>
+
+    <section class="hero is-info">
+      <div class="card">
+        <div class="card-content">
+            <div class="content">
+              <div class="field has-addons">
+                <div>
+                  <p class="control">
+                    <input id="searchBar" class="input" type="text" placeholder="Find a repository" onkeypress="searchValue(event)"/>
+                  </p>
+                </div>
+                <div class="control">
+                  <button id="submitQuery" class="button is-info" onclick="searchClick()">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="userInfos">
+
+      </div>
+    </section>
+
+    <section>
+      <div id="userRepos">
+
+      </div>
+    </section>
+
+
+
+  </body>
+  <script src="./app.js" charset="utf-8" type="text/javascript"></script>
+</html>
